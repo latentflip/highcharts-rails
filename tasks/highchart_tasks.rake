@@ -1,5 +1,5 @@
 namespace :highcharts_rails do
-  to_copy = ["jquery-1.3.2.min.js", "excanvas.compiled.js", "highcharts.js"]
+  to_copy = ["jquery-1.4.3.min.js", "modules/exporting.js", "highcharts.js"]
   
   # install
   desc 'Copies required scripts files to the public/javascripts directory.'
