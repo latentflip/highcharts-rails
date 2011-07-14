@@ -4,8 +4,8 @@ class Highchart
   @@types = ['area', 'areaspline', 'bar', 'column', 'line', 'pie', 'scatter', 'spline', 'combo']
   @@date_format = "<strong>%A</strong><br /> %m/%d/%Y"
   
-	attr_accessor :chart, :colors, :credits, :labels, :lang, :legend, :plotOptions, :point,
-	              :series, :subtitle, :symbols, :title, :toolbar, :tooltip, :x_axis, :y_axis
+  attr_accessor :chart, :colors, :credits, :labels, :lang, :legend, :plotOptions, :point,
+                :series, :subtitle, :symbols, :title, :toolbar, :tooltip, :x_axis, :y_axis
 
   def self.method_missing(m, options={})
     format = options[:format] || 'jquery'
@@ -172,19 +172,19 @@ class Highchart
     def set_legend
       "legend: {
       #{concatenate_attributes(@legend)}
-			}"
+      }"
     end
     
     def set_plotOptions
       "plotOptions: {
         #{concatenate_attributes(@plotOptions)}
-			}"
+      }"
     end
     
     def set_point
       "point: {
         #{concatenate_attributes(@point)}
-			}"
+      }"
     end
     
     def set_series
@@ -204,13 +204,13 @@ class Highchart
       
       "series: [
         #{attrs.join(",\n") + "\n"}
-			]"
+      ]"
     end
     
     def set_subtitle
       "subtitle: {
         #{concatenate_attributes(@subtitle)}
-			}"
+      }"
     end
     
     def set_symbols
