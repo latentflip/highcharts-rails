@@ -54,80 +54,35 @@ class Highchart
     case options[:type].to_s
     when 'area'
       @chart = {
-        :defaultSeriesType => 'area',
-        :margin => [50, 200, 60, 80]
+        :defaultSeriesType => 'area'
       }
     when 'areaspline'
       @chart = {
-        :defaultSeriesType => 'areaspline',
-        :margin => [50, 200, 60, 80]
+        :defaultSeriesType => 'areaspline'
       }
     when 'bar'
       @chart = {
-        :inverted => true, 
-        :defaultSeriesType => 'bar', 
-        :margin => [50, 50, 50, 100]
-      }
-      @plotOptions = {
-        :bar => {
-          :showInLegend => false,
-          :dataLabels => {
-            :y => -5,
-            :enabled => true, 
-            :color => '#666666'
-          }
-        }
+        :defaultSeriesType => 'bar'
       }
     when 'column'
       @chart = {
-        :defaultSeriesType => 'column', 
-        :margin => [50, 50, 50, 100]
-      }
-      @plotOptions = {
-        :column => {
-          :showInLegend => false
-        }
+        :defaultSeriesType => 'column'
       }
     when 'line'
       @chart = {
-        :defaultSeriesType => 'line',
-        :margin => [50, 200, 60, 80]
+        :defaultSeriesType => 'line'
       }
     when 'pie'
       @chart = {
-        :margin => [10, 10, 10, 10]
-      }
-      @plotOptions = {
-        :pie => {
-          :dataLabels => {
-            :enabled => true, 
-            :color => 'white', 
-            :style => {:font => '10pt Helvetica'}
-          }
-        }
+        :defaultSeriesType => 'pie'
       }
     when 'scatter'
       @chart = {
-        :defaultSeriesType => 'scatter',
-        :margin => [50, 200, 60, 80]
-      }
-      @plotOptions = {
-        :scatter => {
-          :marker => {
-            :radius => 5,
-            :states => {
-              :hover => {
-                :enabled => true,
-                :lineColor => '#666666'
-              }
-            }
-          }
-        }
+        :defaultSeriesType => 'scatter'
       }
     when 'spline'
       @chart = {
-        :defaultSeriesType => 'spline',
-        :margin => [50, 200, 60, 80]
+        :defaultSeriesType => 'spline'
       }
     when 'combo'
       @chart = {
