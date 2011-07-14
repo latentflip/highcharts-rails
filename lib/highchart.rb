@@ -25,15 +25,6 @@ class Highchart
     @credits = {
       :enabled => false
     }
-    @legend = {
-      :layout => 'vertical', 
-      :style => {
-         :left => 'auto', 
-         :bottom => 'auto', 
-         :right => '50px', 
-         :top => '75px'
-      }
-    }
     
     # IE7 displays 'null' without this
     @title = {
