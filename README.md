@@ -1,3 +1,6 @@
+# NB: You probably don't want to use this fork
+---
+
 # highcharts-rails
 
 Highcharts-rails is a simple helper for displaying Highcharts graphs in your Rails application. This plugin is completely dependent on the [Highcharts javascript library](http://highcharts.com) by Torstein Hønsi.
